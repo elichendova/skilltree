@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elly & Marto's Skill Tree</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="skilltree.js"></script>
+</head>
+<body>
+    <img src="/skilltree/assets/classes/warrior/warrior.jpg">
+    <div id='container'>
+        <a id='previous' class="fas fa-caret-left"></a>
+        <span>Warrior</span>
+        <a id='next' class="fas fa-caret-right"></a>
+    </div>
+
+    <input id='level' type="number" max="50" placeholder='Enter level...' />
+
+    <h3>Stats</h3>
+    <div id='statPoints'>Remaining points: <span>0/0</span></div>
+    <div id='stats'>
+        <ul>
+            <li>Vitality <a class="fas fa-minus-circle"></a><input type='number' value=0 style='width:30px'/><a class="fas fa-plus-circle statInc"></a></li>
+            <li>Dexterity <a class="fas fa-minus-circle"></a><input type='number'style='width:30px'/><a class="fas fa-plus-circle statInc"></a></li>
+            <li>Defense <a class="fas fa-minus-circle"></a><input type='number' style='width:30px'/><a class="fas fa-plus-circle statInc"></a></li>
+            <li>Intelligence <a class="fas fa-minus-circle"></a><input type='number' style='width:30px'/><a class="fas fa-plus-circle statInc"></a></li>
+        </ul>
+    </div>
+    <h3>Skills</h3>
+    <div id='skillPoints'>Remaining points: <span>0/0</span></div>
+
+    <div id="skills">
+        <ul>
+            <li>Fireball - <span class='skillLevel'>0</span></li>
+            <li>Blast - <span class='skillLevel'>0</span></li>
+            <li>Pyroblast - <span class='skillLevel'>0</span></li>
+        </ul>
+    </div>
+    <style>
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    </style>
+</body>
+</html>
